@@ -2,7 +2,7 @@
 
 Step1 : create google plus client id  from https://console.developers.google.com/apis/credentials
 
-Step2 : Run below command to install from composer
+ ###  Step2 : Run below command to install from composer
 
 composer require kapilpatel20/bvi-googleplus dev-master
 
@@ -10,9 +10,10 @@ Add bundle in AppKernel.php in registerBundles function
 
 new GplusBundle\GplusBundle(),
 
-Step3 : General Settings
+### Step3 : General Settings
 app/config/config.yml
 
+```yaml
  parameters:
     google_client_id       : YOUR_GOOGLE_CLIENT_ID
     google_client_secret   : YOUR_GOOGLE_SECERT
@@ -27,6 +28,11 @@ twig:
 
  php app/console doctrine:schema:update --force
 
-Step4: Add Google plus button in html twig file
+```
 
+### Step4: Add Google plus button in html twig file
+
+
+```jinja
 <a href="{{ google_url }}">Connect with Google</a>
+```
