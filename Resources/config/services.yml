@@ -1,0 +1,7 @@
+services:
+#    gplus.example:
+#        class: GplusBundle\Example
+#        arguments: ["@service_id", "plain_value", "%parameter%"]
+    gplus.create_user:
+        class:     GplusBundle\Service\CreateUser
+        arguments: ['@service_container']

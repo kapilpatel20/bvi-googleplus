@@ -1,0 +1,3 @@
+gplus_homepage:
+    path:     /
+    defaults: { _controller: GplusBundle:Default:index }
