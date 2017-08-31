@@ -14,6 +14,8 @@ Add bundle in AppKernel.php in registerBundles function
 
 ```php
 
+
+new FOS\UserBundle\FOSUserBundle(),
 new GplusBundle\GplusBundle(),
 
 ```
@@ -22,6 +24,9 @@ new GplusBundle\GplusBundle(),
 3.1 app/config/config.yml
 
 ```yaml
+
+imports:
+    - { resource: '@GplusBundle/Resources/config/services.yml' }
 
 parameters:
     google_client_id       : YOUR_GOOGLE_CLIENT_ID

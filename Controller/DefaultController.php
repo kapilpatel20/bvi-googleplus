@@ -13,7 +13,7 @@ class DefaultController extends Controller
         $client_id = $this->container->getParameter('google_client_id');
         $client_domain = $this->container->getParameter('google_client_domain');
         $client_redirect = $this->container->getParameter('google_client_redirect');
-        $client_afterlogin_redirect = $this->container->getParameter('google_client_afterlogin_redirect');
+        $client_afterlogin_redirect = $this->container->getParameter('google_client_after_login_redirect');
         
         $googleUrlDynamic = "https://accounts.google.com/o/oauth2/auth?redirect_uri=".$client_domain.$client_redirect."&response_type=code&client_id=".$client_id."&scope=https://www.googleapis.com/auth/plus.login+https://www.googleapis.com/auth/userinfo.email&access_type=offline";
         
